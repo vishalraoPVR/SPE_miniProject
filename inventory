@@ -1,2 +1,2 @@
 [servers]
-client ansible_host=172.17.0.2 ansible_connection=ssh ansible_user=ansible_usr ansible_sudo_pass=8349850988
+client ansible_host=172.16.135.180 ansible_connection=ssh ansible_user=ansible_usr ansible_sudo_pass=8349850988
