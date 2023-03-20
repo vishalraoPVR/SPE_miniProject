@@ -1,6 +1,6 @@
 ---
 - name: Deploy Docker Image to Container
-  hosts: all
+  hosts: locaclhost
 
   tasks:
     - name: Pull Docker Image
