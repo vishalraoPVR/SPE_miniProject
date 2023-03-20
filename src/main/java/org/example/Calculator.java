@@ -7,15 +7,15 @@ public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
 
     //my factorial function
-    public static long factorial(int n){
+    public static long factorial(int n) {
         logger.info("[FACTORIAL] - " + n);
         if (n == 0)
             return 1;
         else
-            return(n * factorial(n-1));
+            return (n * factorial(n - 1));
     }
 
-    public static double square_root(int n){
+    public static double square_root(int n) {
         double result;
         logger.info("[SQ ROOT] - " + n);
 
@@ -24,18 +24,17 @@ public class Calculator {
         return result;
     }
 
-    public static double natural_log(int n){
+    public static double natural_log(int n) {
         logger.info("[NATURAL LOG] - " + n);
-        double result=0;
+        double result = 0;
         try {
-            if (n < 0 ) {
+            if (n < 0) {
                 result = Double.NaN;
                 throw new ArithmeticException("Case of NaN 0.0/0.0");
             }
-            if (n == 0){
+            if (n == 0) {
                 result = Double.NEGATIVE_INFINITY;
-            }
-            else {
+            } else {
                 result = Math.log(n);
             }
         } catch (ArithmeticException error) {
@@ -46,13 +45,15 @@ public class Calculator {
         return result;
     }
 
-    public static double x_power_b(int x, int b){
+    public static double x_power_b(int x, int b) {
         logger.info("[POWER of" + x + "RAISED TO]" + b);
         double res;
         res = Math.pow(x, b);
         logger.info("[RESULT - POWER] - " + res);
         return res;
     }
+
+
     public static void main(String [] args)
     {
         int num1,num2=0,option,ex;
