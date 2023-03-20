@@ -1,0 +1,6 @@
+2023-03-20T23:19:24,075 [main] INFO  org.example.Calculator - [SQ ROOT] - 4
+2023-03-20T23:19:24,081 [main] INFO  org.example.Calculator - [RESULT - SQ ROOT] - 2.0
+2023-03-20T23:19:30,191 [main] INFO  org.example.Calculator - [POWER of2RAISED TO]5
+2023-03-20T23:19:30,192 [main] INFO  org.example.Calculator - [RESULT - POWER] - 32.0
+2023-03-21T00:03:27,952 [main] INFO  org.example.Calculator - [SQ ROOT] - 5
+2023-03-21T00:03:27,965 [main] INFO  org.example.Calculator - [RESULT - SQ ROOT] - 2.23606797749979
