@@ -4,11 +4,11 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 public class Calculator {
 
-    private static final Logger logger = LogManager.getLogger(Calculator.class);
+//    private static final Logger logger = LogManager.getLogger(Calculator.class);
 
     //my factorial function
     public static long factorial(int n) {
-        logger.info("[FACTORIAL] - " + n);
+//        logger.info("[FACTORIAL] - " + n);
         if (n == 0)
             return 1;
         else
@@ -17,15 +17,15 @@ public class Calculator {
 
     public static double square_root(int n) {
         double result;
-        logger.info("[SQ ROOT] - " + n);
+//        logger.info("[SQ ROOT] - " + n);
 
         result = Math.sqrt(n);
-        logger.info("[RESULT - SQ ROOT] - " + result);
+//        logger.info("[RESULT - SQ ROOT] - " + result);
         return result;
     }
 
     public static double natural_log(int n) {
-        logger.info("[NATURAL LOG] - " + n);
+//        logger.info("[NATURAL LOG] - " + n);
         double result = 0;
         try {
             if (n < 0) {
@@ -38,18 +38,18 @@ public class Calculator {
                 result = Math.log(n);
             }
         } catch (ArithmeticException error) {
-            logger.error("[EXCEPTION - LOG] - Cannot find log of negative numbers");
+//            logger.error("[EXCEPTION - LOG] - Cannot find log of negative numbers");
             System.out.println("[EXCEPTION - LOG] - Cannot find log of negative numbers " + error.getLocalizedMessage());
         }
-        logger.info("[RESULT - NATURAL LOG] - " + result);
+//        logger.info("[RESULT - NATURAL LOG] - " + result);
         return result;
     }
 
     public static double x_power_b(int x, int b) {
-        logger.info("[POWER of" + x + "RAISED TO]" + b);
+//        logger.info("[POWER of" + x + "RAISED TO]" + b);
         double res;
         res = Math.pow(x, b);
-        logger.info("[RESULT - POWER] - " + res);
+//        logger.info("[RESULT - POWER] - " + res);
         return res;
     }
 
