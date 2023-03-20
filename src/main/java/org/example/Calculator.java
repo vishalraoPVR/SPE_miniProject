@@ -48,16 +48,16 @@ public class Calculator {
 
     public static double x_power_b(int x, int b){
         logger.info("[POWER of" + x + "RAISED TO]" + b);
-        double res=0;
+        double res;
         res = Math.pow(x, b);
         logger.info("[RESULT - POWER] - " + res);
         return res;
     }
-    public static void main(String a[])
+    public static void main(String [] args)
     {
-        int num1=0,num2=0,option,ex;
-        double res=0;
-        long ress=0;
+        int num1,num2=0,option,ex;
+        double res;
+        long ress;
         do
         {
             Scanner sc = new Scanner(System.in);
@@ -95,7 +95,7 @@ public class Calculator {
                     res = x_power_b(num1, num2);
                     System.out.println(num1+" to the power "+num2+" is "+res);
                     break;
-                case 5: break;
+
                 default: System.out.println("Invalid choice");
             }
             System.out.println("Do you want to continue? \n 1.Yes 2.No");
@@ -104,34 +104,4 @@ public class Calculator {
     }
 
 }
-//public class Calculator {
-//    public static int add(int a, int b) {
-//        return a+b;
-//    }
-//
-//    public static int sub(int a, int b) {
-//        return a-b;
-//    }
-//    public static void main(String[] args) {
-//
-//        Scanner sc = new Scanner(System.in);
-//        int opt=1;
-//
-//        while(opt!=3) {
-//            System.out.println("Enter two numbers:");
-//            int a = sc.nextInt();
-//            int b = sc.nextInt();
-//            System.out.println("Enter a choice: \n1. Addition\n2. Subtraction\n3. Exit");
-//            opt = sc.nextInt();
-//            switch (opt) {
-//                case 1:
-//                    System.out.println("The result is: " + add(a, b));
-//                    break;
-//                case 2:
-//                    System.out.println("The result is: " + sub(a, b));
-//                    break;
-//            }
-//        }
-//
-//    }
-//}
+

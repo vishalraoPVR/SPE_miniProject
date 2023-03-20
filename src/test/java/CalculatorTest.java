@@ -46,7 +46,7 @@ public class CalculatorTest
         double expectedResult = 8.0;
         //Act
         double result = objCalcUnderTest.x_power_b(x, b);
-        //Assert
+
         assertEquals("Finding factorial for true positive", expectedResult, result, DELTA);
     }
     @Test
