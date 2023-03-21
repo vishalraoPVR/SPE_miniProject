@@ -14,7 +14,7 @@ public class Calculator {
         else
             return (n * factorial(n - 1));
     }
-
+   //square root functin
     public static double square_root(int n) {
         double result;
        logger.info("[SQ ROOT] - " + n);
