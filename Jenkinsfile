@@ -21,7 +21,7 @@ pipeline {
         stage("Building our Image"){
             steps{
                 script{
-                    
+                    //
                     dockerImage = docker.build("vishalrao7/scientific_calculator:latest")
                 }
             }
