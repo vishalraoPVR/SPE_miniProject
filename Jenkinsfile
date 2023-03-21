@@ -1,7 +1,7 @@
 pipeline {
         environment{
         registry="vishalrao7/scientific_calculator"
-        registryCredential=""
+        registryCredential="docker_hub"
         dockerImage=""
     }
     agent any
