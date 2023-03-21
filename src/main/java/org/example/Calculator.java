@@ -23,7 +23,8 @@ public class Calculator {
        logger.info("[RESULT - SQ ROOT] - " + result);
         return result;
     }
-
+   
+   //log function
     public static double natural_log(int n) {
        logger.info("[NATURAL LOG] - " + n);
         double result = 0;
