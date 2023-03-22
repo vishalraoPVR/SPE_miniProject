@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
+                    //git clone stage
                 git branch:'master',url:'https://github.com/vishalraoPVR/SPE_miniProject.git'
             }
         }
