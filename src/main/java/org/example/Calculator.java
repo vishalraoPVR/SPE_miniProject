@@ -6,7 +6,7 @@ public class Calculator {
 
    private static final Logger logger = LogManager.getLogger(Calculator.class);
 
-    //my factorial  function
+    //my factorial   function
     public static long factorial(int n) {
        logger.info("[FACTORIAL] - " + n);
         if (n == 0)
